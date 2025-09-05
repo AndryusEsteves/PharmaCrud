@@ -54,9 +54,12 @@ def adicionar_medicamento(nome, laboratorio, data_de_validade, quantidade, dosag
 
 # --- Lista de medicamentos para cadastro inicial ---
 novos_medicamentos = [
-    ("Paracetamol", "Laboratório XYZ", "2025-12-31", 10, "500mg", 12.50),
-    ("Ibuprofeno", "Laboratório ABC", "2024-10-15", 20, "200mg", 8.75),
-    ("Amoxicilina", "Laboratório DEF", "2025-05-20", 15, "500mg", 20.0)
+    ("Paracetamol", "Laboratório XYZ", "2025-12-31", 10, "500mg", 12.50), # Medicamento 1
+    ("Ibuprofeno", "Laboratório ABC", "2024-10-15", 20, "200mg", 8.75), # Medicamento 2
+    ("Dipirona", "Laboratório JKL", "2025-09-30", 25, "500mg", 7.20),   # medicamento 3
+    ("Claritromicina", "Laboratório MNO", "2025-08-15", 12, "500mg", 18.00), # medicamento 4
+    ("Cetirizina", "Laboratório GHI", "2026-01-10", 30, "10mg", 5.50), # medicamento 5
+    ("Amoxicilina", "Laboratório DEF", "2025-05-20", 15, "500mg", 20.0) # medicamento 6
 ]
 
 for med in novos_medicamentos:
