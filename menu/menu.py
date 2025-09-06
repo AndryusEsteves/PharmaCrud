@@ -20,19 +20,19 @@ def show_menu():
         opcao5 = "5 - Sair".ljust(largura - 2)
 
         # 2. Imprime o menu com a lógica de cores
-        print(f"{Fore.GREEN}+{'-' * (largura - 2)}+")
+        print(f"{Fore.BLUE}+{'-' * (largura - 2)}+")
         # A linha do título vira um "sanduíche": Molde Verde -> Texto Branco -> Molde Verde
-        print(f"{Fore.GREEN}|{Fore.YELLOW}{titulo_centralizado}{Fore.GREEN}|")
-        print(f"{Fore.GREEN}+{'=' * (largura - 2)}+")
+        print(f"{Fore.BLUE}|{Fore.BLUE}{titulo_centralizado}{Fore.BLUE}|")
+        print(f"{Fore.BLUE}+{'=' * (largura - 2)}+")
         
         # As linhas das opções seguem a mesma lógica do "sanduíche"
-        print(f"{Fore.GREEN}|{Fore.WHITE}{opcao1}{Fore.GREEN}|")
-        print(f"{Fore.GREEN}|{Fore.WHITE}{opcao2}{Fore.GREEN}|")
-        print(f"{Fore.GREEN}|{Fore.WHITE}{opcao3}{Fore.GREEN}|")
-        print(f"{Fore.GREEN}|{Fore.WHITE}{opcao4}{Fore.GREEN}|")
-        print(f"{Fore.GREEN}|{Fore.WHITE}{opcao5}{Fore.GREEN}|")
+        print(f"{Fore.BLUE}|{Fore.WHITE}{opcao1}{Fore.BLUE}|")
+        print(f"{Fore.BLUE}|{Fore.WHITE}{opcao2}{Fore.BLUE}|")
+        print(f"{Fore.BLUE}|{Fore.WHITE}{opcao3}{Fore.BLUE}|")
+        print(f"{Fore.BLUE}|{Fore.WHITE}{opcao4}{Fore.BLUE}|")
+        print(f"{Fore.BLUE}|{Fore.WHITE}{opcao5}{Fore.BLUE}|")
         
-        print(f"{Fore.GREEN}+{'-' * (largura - 2)}+")
+        print(f"{Fore.BLUE}+{'-' * (largura - 2)}+")
 
         # 4. Pede a opção ao usuário (colorido)
         opcao = input(Fore.YELLOW + "\nEscolha uma opção: ")
@@ -47,7 +47,7 @@ def show_menu():
         elif opcao == "4":
             print(f"\n{Fore.CYAN}Chamando a função: excluir_medicamento()")
         elif opcao == "5":
-            print(f"\n{Fore.GREEN}Obrigado por usar o PharmaCRUD! Até logo.")
+            print(f"\n{Fore.CYAN}Obrigado por usar o PharmaCRUD! Até logo.")
             break
         else:
             print(f"\n{Fore.RED}Opção inválida! Por favor, escolha um número de 1 a 5.")
