@@ -20,6 +20,6 @@
 # =====================================================================
 id_atual = 0
 
-medicamentos = medicamentos = []
+medicamentos = []
 
 
