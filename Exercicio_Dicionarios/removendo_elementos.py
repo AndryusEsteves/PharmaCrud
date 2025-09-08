@@ -3,7 +3,7 @@
 dicionario_carro = {
     'Marca' : "Ford",
     'Modelo': "Fiesta",
-    'Ano': "2010"
+    'Ano': 2010
 }
 
 dicionario_carro.pop('Ano')

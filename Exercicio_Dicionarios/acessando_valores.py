@@ -2,8 +2,8 @@
 
 produto_dicionario  ={
     "Nome": "Caneta",
-    "Preço" : "2.5", 
-    "Estoque": "100"
+    "Preço" : 2.5, 
+    "Estoque": 100
 }
 
 print (produto_dicionario ["Nome"])

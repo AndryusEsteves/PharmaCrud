@@ -2,7 +2,7 @@
 
 Dicionario_pessoa = {
     'nome': "Carlos",
-    'idade':"30",
+    'idade':30,
     'cidade': "São Paulo"
 }
 

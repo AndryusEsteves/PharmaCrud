@@ -2,8 +2,8 @@
 
 dicionario_aluno = {
 'nome': 'Natalia',
-'idade': '41',
-'nota': '9,5'
+'idade': 41,
+'nota': 9.5
 
 }
 
