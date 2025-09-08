@@ -1,0 +1,50 @@
+[
+    {
+        "nome": "Paracetamol",
+        "laboratorio": "Laboratório XYZ",
+        "data_de_validade": "2025-12-31",
+        "quantidade": 10,
+        "dosagem": "500mg",
+        "valor": 12.5
+    },
+    {
+        "nome": "Ibuprofeno",
+        "laboratorio": "Laboratório ABC",
+        "data_de_validade": "2024-10-15",
+        "quantidade": 20,
+        "dosagem": "200mg",
+        "valor": 8.75
+    },
+    {
+        "nome": "Dipirona",
+        "laboratorio": "Laboratório JKL",
+        "data_de_validade": "2025-09-30",
+        "quantidade": 25,
+        "dosagem": "500mg",
+        "valor": 7.2
+    },
+    {
+        "nome": "Claritromicina",
+        "laboratorio": "Laboratório MNO",
+        "data_de_validade": "2025-08-15",
+        "quantidade": 12,
+        "dosagem": "500mg",
+        "valor": 18.0
+    },
+    {
+        "nome": "Cetirizina",
+        "laboratorio": "Laboratório GHI",
+        "data_de_validade": "2026-01-10",
+        "quantidade": 30,
+        "dosagem": "10mg",
+        "valor": 5.5
+    },
+    {
+        "nome": "Amoxicilina",
+        "laboratorio": "Laboratório DEF",
+        "data_de_validade": "2025-05-20",
+        "quantidade": 15,
+        "dosagem": "500mg",
+        "valor": 20.0
+    }
+]
