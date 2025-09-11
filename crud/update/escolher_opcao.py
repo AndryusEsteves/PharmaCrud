@@ -1,7 +1,7 @@
 from typing import Any
 # from ..data.database import banco as db
-from achar_indice import achar_valor_por_indice
-import editar_medicamento
+from crud.update.achar_indice import achar_valor_por_indice
+import crud.update.editar_medicamento as editar_medicamento
 
 
 def escolher_item(item: dict[str, Any] | None) -> None:
@@ -201,6 +201,6 @@ if __name__ == "__main__":
         }
     ]
 
-    escolher_item(achar_valor_por_indice(banco_de_dados))
-    for medicamento in banco_de_dados:
-        print(f"{medicamento}\n")
+    # escolher_item(achar_valor_por_indice(banco_de_dados))
+    # for medicamento in banco_de_dados:
+    #     print(f"{medicamento}\n")

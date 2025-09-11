@@ -1,5 +1,6 @@
 import os #limpa o terminal automaticamente
 import time
+from crud.update import escolher_opcao
 from colorama import init, Fore, Style
 init(autoreset=True)
 
@@ -43,7 +44,8 @@ def show_menu():
         elif opcao == "2":
             print(f"\n{Fore.CYAN}Chamando a função: listar_medicamentos()")
         elif opcao == "3":
-            print(f"\n{Fore.CYAN}Chamando a função: iniciar_atualizacao()") # Nome da função que combinamos
+            print(f"\n{Fore.CYAN}Chamando a função: escolher_opcao()") # Nome da função que combinamos
+            escolher_opcao()
         elif opcao == "4":
             print(f"\n{Fore.CYAN}Chamando a função: excluir_medicamento()")
         elif opcao == "5":
