@@ -55,6 +55,8 @@ def show_menu():
             menu_editar()
         elif opcao == "4":
             print(f"\n{Fore.CYAN}Chamando a função: excluir_medicamento()")
+            from crud.delete import excluir_medicamento
+            excluir_medicamento()
         elif opcao == "5":
             print(f"\n{Fore.CYAN}Obrigado por usar o PharmaCRUD! Até logo.")
             break

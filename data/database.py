@@ -47,6 +47,14 @@ class Estoque():
     
         conn.commit()
         conn.close()
-
+    
+    def remover_medicamento_por_id(self, med_id: int) -> bool:
+        conn = sqlite3.connect(self.db_file)
+        cursor = conn.cursor()
+        cursor.execute("DELETE FROM medicamentos WHERE id = ?", (med_id,))
+        affected = cursor.rowcount
+        conn.commit()
+        conn.close()
+        return affected > 0
 
 banco_de_dados = []
