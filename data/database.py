@@ -49,3 +49,4 @@ class Estoque():
         conn.close()
 
 
+banco_de_dados = []
