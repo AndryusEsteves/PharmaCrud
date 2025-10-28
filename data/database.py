@@ -22,4 +22,30 @@ class Estoque():
 
         conn.close()
         return lista_de_medicamentos
+    
+    def adicionar_medicamento(self, med):
+        conn = sqlite3.connect(self.db_file)
+        cursor = conn.cursor()
+
+        cursor.execute("""
+        INSERT INTO medicamentos 
+        (nome, principio_ativo, apresentacao, concentracao, fabricante, preco, quantidade_estoque, receita_obrigatoria, data_validade, disponivel_farmacia_popular)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    """, (
+        med.nome,
+        med.principio_ativo,
+        med.apresentacao,
+        med.concentracao,
+        med.fabricante,
+        med.preco,
+        med.quantidade_estoque,
+        med.receita_obrigatoria,
+        med.data_validade,
+        med.disponivel_farmacia_popular
+    ))
+
+    
+        conn.commit()
+        conn.close()
+
 
