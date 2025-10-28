@@ -1,3 +1,4 @@
+from crud.read import exibir_lista_medicamento
 import os #limpa o terminal automaticamente
 import time
 from crud.update import escolher_opcao
@@ -43,6 +44,7 @@ def show_menu():
             print(f"\n{Fore.CYAN}Chamando a função: cadastrar_medicamento()")
         elif opcao == "2":
             print(f"\n{Fore.CYAN}Chamando a função: listar_medicamentos()")
+            exibir_lista_medicamento()
         elif opcao == "3":
             print(f"\n{Fore.CYAN}Chamando a função: escolher_opcao()") # Nome da função que combinamos
             escolher_opcao()

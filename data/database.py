@@ -1,25 +1,25 @@
-# data/database.py 
+import sqlite3
+from data.models import Medicamento
 
-# =====================================================================
-# SCHEMA OFICIAL (a ser seguido por TODA A EQUIPE)
-# ---------------------------------------------------------------------
-# Cada medicamento é um dicionário que deve seguir esta estrutura:
-# {
-#   "id":                            int,    # Identificador único (não se repete)
-#   "nome":                          str,    # Ex: "Dipirona 500mg"
-#   "principio_ativo":               str,    # Ex: "Dipirona Sódica"
-#   "apresentacao":                  str,    # Ex: "comprimido", "cápsula", "xarope"
-#   "concentracao":                  str,    # Ex: "500mg", "10mg/ml"
-#   "fabricante":                    str,    # Nome do laboratório
-#   "preco":                         float,  # Preço de venda (use . como separador, ex: 12.50)
-#   "quantidade_estoque":            int,    # Unidades disponíveis no estoque
-#   "receita_obrigatoria":           bool,   # True se precisa de receita, False se não
-#   "data_validade":                 str,    # Formato "AAAA-MM-DD"
-#   "disponivel_farmacia_popular":   bool    # True se faz parte do programa
-# }
-# =====================================================================
-id_atual = 0
+class Estoque():
+    def __init__(self,db_file):
+        self.db_file = db_file
+    
+    def listar_todos_medicamentos(self):
+        # 1. Conectar ao banco
+        # 2. Executar o SQL
+        # 3. Pegar os resultados
+        # 4. Transformar em objetos
+        # 5. Fechar a conexão
+        conn = sqlite3.connect(self.db_file)
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM medicamentos")
+        resultados_brutos = cursor.fetchall()
+        lista_de_medicamentos = []
+        for linha in resultados_brutos:
+            novo_medicamento = Medicamento(*linha)
+            lista_de_medicamentos.append(novo_medicamento)
 
-medicamentos = []
-
+        conn.close()
+        return lista_de_medicamentos
 
